@@ -9,7 +9,7 @@ const App = () => {
        dispatch(fetchMessages())
     }, [])
     return (
-        <div>Hello app component: {state.message}</div>
+        <div>Greetings: {state.message}</div>
     )
 }
 

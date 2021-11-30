@@ -28,7 +28,7 @@ const messagesReducer = (state = defaultValues, action) => {
 // ------------ MIDDLEWARES -------------------
 const fetchMessagesFromAPIMiddleware = (store) => (next) => (action) => {
     if (action.type === FETCH_MESSAGES) {
-      fetch('/getmessages', {
+      fetch('/v1/messages', {
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
