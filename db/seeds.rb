@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Message.create({ name: 'Hello this is a react random message one'})
+Message.create({ name: 'Hello this is a react random message two'})
+Message.create({ name: 'Hello this is a react random message three'})
+Message.create({ name: 'Hello this is a react random message four'})
+Message.create({ name: 'Hello this is a react random message five'})
