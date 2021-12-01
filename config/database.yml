@@ -21,7 +21,7 @@ default: &default
   pool: 5
   username: postgres
   password: jf7l2p93li
-  
+
 development:
   adapter: postgresql
   encoding: unicode
