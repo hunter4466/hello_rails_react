@@ -5,16 +5,16 @@ const FETCH_MESSAGES = 'REDUX/APP/APP/FETCH_MESSAGES';
 const uploadMessages = (payload) => ({
   type: UPLOAD_MESSAGES,
   payload,
-})
+});
 const fetchMessages = (payload) => ({
   type: FETCH_MESSAGES,
   payload,
-})
+});
 
 // ----------- REDUCERS ----------------------
 
 const defaultValues = {
-  message: 'hello reducer'
+  message: 'hello reducer',
 };
 
 const messagesReducer = (state = defaultValues, action) => {
@@ -23,7 +23,7 @@ const messagesReducer = (state = defaultValues, action) => {
       return action.payload;
     default:
       return state;
-  };
+  }
 };
 // ------------ MIDDLEWARES -------------------
 const fetchMessagesFromAPIMiddleware = (store) => (next) => (action) => {
@@ -32,8 +32,8 @@ const fetchMessagesFromAPIMiddleware = (store) => (next) => (action) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-      }).then((response) => response.json())
-        .then((json) => store.dispatch(uploadMessages(json)));
+    }).then((response) => response.json())
+      .then((json) => store.dispatch(uploadMessages(json)));
   }
   next(action);
 };

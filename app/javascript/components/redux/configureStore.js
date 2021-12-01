@@ -1,30 +1,29 @@
 import {
   createStore, compose, combineReducers, applyMiddleware,
 } from 'redux';
-  // ----------- STORE IMPORTS -----------
+// ----------- STORE IMPORTS -----------
 import {
   // -------------- reducers ---------------
-messagesReducer,
+  messagesReducer,
   // ------------- middlewares -------------
-fetchMessagesFromAPIMiddleware,
+  fetchMessagesFromAPIMiddleware,
 } from './app/app';
-  
+
 const reducer = combineReducers({
   // ------------ Store Reducers -----
-messagesReducer,
+  messagesReducer,
 });
-  
+
 const composedEnhancer = compose(
   // ------------ Store Middlewares -----
   applyMiddleware(fetchMessagesFromAPIMiddleware),
   // ------------- Logger --------------
 );
-  
+
 const store = createStore(
   reducer,
   undefined,
   composedEnhancer,
 );
-  
+
 export default store;
-  
