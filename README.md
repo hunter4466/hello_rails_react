@@ -4,7 +4,7 @@ In this project I developed a simple app to connect react with rails and fetch s
 
 ## Screenshots
 
-![image](./app/assets/images/screenshots/Capture.png)
+![image](./app/assets/images/screenshots/Capture.PNG)
 
 
 ## Built With
