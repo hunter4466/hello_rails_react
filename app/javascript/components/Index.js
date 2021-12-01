@@ -17,7 +17,7 @@ const Index = () => (
           <Redirect to="/home" />
         </Route>
         <Route path="/home">
-          <App/>
+          <App />
         </Route>
       </Switch>
     </BrowserRouter>
