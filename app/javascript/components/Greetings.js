@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Greetings = (props) => (
   <div>
     Greetings:
-    {this.props.greeting}
+    {props.greeting}
   </div>
 );
 
