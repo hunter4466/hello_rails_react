@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Provider } from 'react-redux';
-import App from './App';
 import store from './redux/configureStore';
 import {
   BrowserRouter,
@@ -8,10 +7,11 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
+import App from './App';
 
 const Index = () => (
   <Provider store={store}>
-    <React.Fragment>
+    <Fragment>
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
@@ -22,7 +22,7 @@ const Index = () => (
           </Route>
         </Switch>
       </BrowserRouter>
-    </React.Fragment>
+    </Fragment>
   </Provider>
 );
 export default Index;

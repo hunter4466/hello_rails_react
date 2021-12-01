@@ -5,9 +5,9 @@ import { fetchMessages } from './redux/app/app';
 const App = () => {
   const state = useSelector((state) => state.messagesReducer);
   const dispatch = useDispatch();
-  useEffect(()=> {
+  useEffect(() => {
     dispatch(fetchMessages());
-  }, [])
+  }, []);
   return (
     <div>
       Greetings:
