@@ -65,4 +65,6 @@ gem 'devise'
 
 gem 'react-rails'
 
+gem 'eslint-rails'
+
 gem 'cancancan', '~> 3.3'
