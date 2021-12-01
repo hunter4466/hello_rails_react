@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Greetings = ({greeting}) => (
+const Greetings = ({ greeting }) => (
   <div>
     Greetings:
     {greeting}
