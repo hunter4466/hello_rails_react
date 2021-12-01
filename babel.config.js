@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-use-before-define
+/* eslint-disable */
 module.exports = function(api) {
   var validEnv = ['development', 'test', 'production']
   var currentEnv = api.env()
@@ -98,3 +98,4 @@ module.exports = function(api) {
     ].filter(Boolean)
   }
 }
+/* eslint-enable */

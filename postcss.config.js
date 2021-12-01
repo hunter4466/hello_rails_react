@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-use-before-define
+/* eslint-disable */
 module.exports = {
   plugins: [
     require('postcss-import'),
@@ -11,3 +11,4 @@ module.exports = {
     }),
   ],
 };
+/* eslint-enable */
